@@ -1,0 +1,150 @@
+@charset "utf-8";
+/* CSS Document */
+/***************************carousel************************/
+body{ font-family: Arial, Helvetica, sans-serif;}
+.carousel-caption
+{position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+}
+
+.carousel-caption h1{line-height:1.9;font-size:3.5rem;text-transform:uppercase;}
+.carousel-caption p{line-height:1.0;font-size:1.5rem;text-transform:capitalize;}
+/***************************navbar**************************/
+.navbar{z-index:999999;position:fixed;width:100%;}
+.navbar .navbar-brand{padding:5px;border:3px solid #fff;font-weight:800;}
+
+a:not([href]):not([tabindex]) {
+    color: #fff;
+    text-decoration: none;
+}
+a:not([href]):not([tabindex]):hover {
+    color: #eee;
+    text-decoration: none;
+}
+.bg-light{background-color:transparent !important;border-bottom:1px solid rgba(255,251,240,0.5)}
+
+
+
+
+
+.r{text-decoration:none;color:#fff;padding: 15px 20px;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 2px;text-transform:capitalize;}
+.r:hover{text-decoration:none;color:#eee;}
+/***************work***********************/
+#work{margin:100px auto 30px auto;}
+  #work .con{
+	  border:5px solid #000;
+	  padding:45px;
+	  text-align:center;
+	  }
+
+
+#work .con h5{ color: #ffa400;padding-top:22px;letter-spacing:4px}
+#work .con h1{font-weight:bold;font-size:3rem;line-height:5.5rem;letter-spacing:0.3rem;font-family: 'Raleway', sans-serif;}
+#work .con hr{width:30%;height:2px;color:#eee;}
+#work .con p{color:#777;}
+@media(max-width:575.98px){
+	#work .con h1{font-weight:500;font-size:2rem;line-height:3.5rem;font-family: 'Raleway', sans-serif;}}
+@media(min-width:576px)and (max-width:767.98px){
+	#team .con h1{font-weight:500;font-size:3rem;line-height:4rem;color:#afafaf; font-family: 'Raleway', sans-serif;}}
+@media(min-width:768px)and (max-width:991px){}
+
+/******************start team***********************/
+#team{background-color:#f2f2f2;padding-bottom:200px;padding-top:100px;}
+
+  #team .con{
+	  border:5px solid #000;
+	  padding:45px;
+	  text-align:center;margin-bottom:120px;
+	  }
+
+
+#team .con h5{ color: #ffa400;padding-top:22px;letter-spacing:4px}
+#team .con h1{font-weight:bold;font-size:3rem;line-height:5.5rem;letter-spacing:0.3rem;font-family: 'Raleway', sans-serif;}
+#team .con hr{width:30%;height:2px;color:#eee;}
+#team .con p{color:#777;}
+
+.gallary{text-align:center;position:relative;}
+.gallary img{width:100%;height:100%;}
+.details{background-color:rgba(255,255,255,0.1);padding:50px;position:absolute;top:100%;left:0px;width:100%;height:60%;transition:all 0.5s ease-in-out;}
+.details h5{text-transform:uppercase;font-weight:bold;letter-spacing:0.2rem;line-height:2rem;}
+.details p{color:#FF7F00;}
+
+.gallary:hover .details{top:80%;left:0px;background-color:rgba(255,255,255,1)}
+
+@media(max-width:575.98px){
+	#team .con h1{font-weight:500;font-size:2rem;line-height:3.5rem;font-family: 'Raleway', sans-serif;}
+.gallary{text-align:center;position:relative;margin-bottom:200px;}
+
+.details h5{text-transform:uppercase;font-weight:400;}
+.details p{color:#FF7F00;font-size:16px;}
+
+
+	
+	}
+@media(min-width:576px)and (max-width:767.98px){
+	#team .con h1{font-weight:500;font-size:3rem;line-height:4rem;color:#afafaf; font-family: 'Raleway', sans-serif;}
+	.details{background-color:rgba(255,255,255,0.1);padding:20px;position:absolute;top:100%;left:0px;width:100%;height:100%;transition:all 0.5s ease-in-out;}
+	.details h5{text-transform:uppercase;font-weight:500;}
+.details p{color:#FF7F07;font-size:18px;}
+	
+	
+	}	
+@media(min-width:768px)and (max-width:991px){
+	.details{background-color:rgba(255,255,255,0.1);padding:10px;position:absolute;top:100%;left:0px;width:100%;height:70%;transition:all 0.5s ease-in-out;}
+	.details h5{text-transform:uppercase;font-weight:100;}
+.details p{color:#FF7F07;font-size:16px;padding:0px;}
+	
+	
+	}
+/****************End team****************/
+
+/******************start Gallary***********************/
+#gallary{background-color:#f2f2f2;padding-bottom:200px;padding-top:100px;}
+
+  #gallary .con{
+	  border:5px solid #000;
+	  padding:45px;
+	  text-align:center;margin-bottom:120px;
+	  }
+
+
+#gallary .con h5{ color: #ffa400;padding-top:22px;letter-spacing:4px}
+#gallary .con h1{font-weight:bold;font-size:3rem;line-height:5.5rem;letter-spacing:0.3rem;font-family: 'Raleway', sans-serif;}
+#gallary .con hr{width:30%;height:2px;color:#eee;}
+#gallary .con p{color:#777;}
+
+#gallary .gallary{text-align:left;position:relative;margin:10px;}
+#gallary .gallary img{width:100%;height:100%;}
+#gallary .details{display:none;padding:5px;position:absolute;top:100%;left:0px;width:100%;height:20%;transition:all 0.5s ease-in-out;}
+#gallary .details h4{text-transform:capitalize;font-weight:bold;letter-spacing:0.2rem;line-height:2rem;
+margin-top:5%}
+ 
+
+#gallary .gallary:hover .details{top:80%;left:0px;background-color:rgba(255,255,255,0.5);display:block;}
+
+@media(max-width:575.98px){
+	#gallary .details h4{text-transform:capitalize;font-weight:200;}
+	}
+@media(min-width:576px)and (max-width:767.98px){
+	
+	
+	}	
+@media(min-width:768px)and (max-width:991px){
+	
+	}
+/****************End Gallary****************/
+
+
+
+
+
+
+
+
+.card-img-overlay{background-color:rgba(255,0,0,0.5)}
